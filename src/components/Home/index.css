@@ -1,0 +1,16 @@
+.con {
+    display: flex;
+    flex-direction: row;   
+    background: rgb(250, 247, 236);
+}
+
+.con-left {
+    width: 400px;
+    height: 95vh;
+    border-right: 1px solid rgb(55, 55, 55);
+}
+
+.con-right {
+    width: 1300px;
+    height: 92vh;
+}

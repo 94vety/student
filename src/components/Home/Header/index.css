@@ -1,0 +1,51 @@
+.back {
+    border-bottom: 1px solid rgb(55, 55, 55);
+    background-color: white;
+    height: 60px;
+    display: flex;
+    color: coral;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "Times New Roman";
+    background: rgb(250, 247, 236);
+    align-items: center;
+}
+
+.top-left {
+    margin-left: 13vw;
+}
+
+.search {
+    margin-left: 5vw;
+    background: rgb(55, 55, 55);
+    padding: 5px 8px;
+    border-radius: 25px;
+    width: 300px;
+}
+
+.search-icon {
+    color: #bbb;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 240px;
+    font-size: 16px;
+    background: rgb(55, 55, 55);
+}
+
+.top-person {
+    max-height: 25px;
+    font-size: 18px;
+    margin-left: 40vw;
+}
+
+.menu-item {
+    color: coral;
+    font-family: "Times New Roman";
+    font-weight: 600;
+}
+

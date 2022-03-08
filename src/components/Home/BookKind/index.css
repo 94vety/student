@@ -1,0 +1,43 @@
+.kind {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: coral;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.kind-book {
+    max-width: 200px;
+    min-height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 8px 50px 8px 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.one {
+    background: rgb(187, 210, 234);
+    color: rgb(100, 129, 181);
+}
+
+.two {
+    background: rgb(245, 186, 98);
+    color: white;
+}
+
+.three {
+    background: rgb(241, 224, 193);
+    color: rgb(216, 181, 115);
+}
+
+.five {
+    background: rgb(200, 227, 222);
+    color: rgb(82, 132, 122);
+}

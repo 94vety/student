@@ -16,7 +16,8 @@ import {
     addUser,
     deleteUser,
     modifyBook,
-    deleteBook
+    deleteBook,
+    records
 } from "../services/index.js";
 
 class Mobx {
@@ -30,6 +31,7 @@ class Mobx {
     returnBooksListData = []
     usersListData = []
     canSwitch = true
+    recordList = []
 
     constructor() {
         makeAutoObservable(this);
@@ -292,6 +294,18 @@ class Mobx {
             message.success("删除成功");
         } else {
             message.error("删除失败");
+        }
+    }
+
+    recordsRequest = async() => {
+        const {
+            status, data
+        } = await records();
+        
+        if (status === 304 || status === 400 || status >= 200 && status < 300) {
+            this.recordList = data;
+        } else {
+            message.error("数据请求失败");
         }
     }
 }

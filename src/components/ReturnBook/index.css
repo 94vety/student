@@ -41,6 +41,10 @@
     overflow-y: scroll;
 }
 
+.return-content::-webkit-scrollbar {
+    width: 0;
+}
+
 .empty {
     margin-top: 200px;
 }

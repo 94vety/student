@@ -31,3 +31,5 @@ export const getBooks = () => request.get("/api/books/");
 export const modifyBook = (data, id) => request.patch(`/api/books/${id}/`, data);
 
 export const deleteBook = id => request.delete(`/api/books/${id}/`);
+
+export const records = () => request.get("/api/getHistories/");

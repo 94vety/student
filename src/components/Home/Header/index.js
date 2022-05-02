@@ -20,6 +20,11 @@ function Header() {
         navigate("/person");
     }
 
+    const loginOut = () => {
+        navigate("/");
+        localStorage.clear();
+    }
+
     const handleReturn = (event) => {
         const { value } = event.target;
 
@@ -31,6 +36,10 @@ function Header() {
         } else {
             setValue(value);
         }
+    }
+
+    const readRecords = () => {
+        navigate("/records");
     }
 
     return (
@@ -52,12 +61,26 @@ function Header() {
                     placement="topLeft"
                     overlay={
                         <Menu style={{ color: "red"}}>
+                            <Menu.Item
+                                className="menu-item"
+                                key="1"
+                                onClick={readRecords}
+                            >
+                                借阅记录
+                            </Menu.Item>
                             <Menu.Item 
                                 className="menu-item"
                                 key="2"
                                 onClick={returnBook}
                             >
                                 归还书籍
+                            </Menu.Item>
+                            <Menu.Item
+                                className="menu-item"
+                                key="4"
+                                onClick={loginOut}
+                            >
+                                退出登录
                             </Menu.Item>
                             {superuser &&
                                 <Menu.Item 
